@@ -1,10 +1,19 @@
 # Acurast Chat - 去中心化 AI 聊天应用
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-green.svg)](https://github.com/29sb/acurast-chat/releases/tag/v1.0.0)
 
 **一个基于 Acurast 网络的去中心化 AI 聊天应用**
 
 你的消息通过全球手机节点网络进行处理，保护隐私安全。
+
+---
+
+## 🌍 English Version
+
+[English README](README_EN.md)
+
+---
 
 ## ✨ 特性
 
@@ -34,25 +43,34 @@
 
 ## 🚀 快速开始
 
-### 编译 APK
+### 下载安装
+
+从 [Releases](https://github.com/29sb/acurast-chat/releases) 页面下载最新 APK：
+
+```bash
+# 下载 v1.0.0
+wget https://github.com/29sb/acurast-chat/releases/download/v1.0.0/AcurastChat-v1.0.0-release.apk
+```
+
+### 从源码编译
 
 ```bash
 # 克隆仓库
 git clone https://github.com/29sb/acurast-chat.git
 cd acurast-chat
 
-# 编译 debug 版本
-./gradlew assembleDebug
+# 编译 release 版本
+./gradlew assembleRelease
 
 # APK 位置
-# app/build/outputs/apk/debug/app-debug.apk
+# app/build/outputs/apk/release/app-release.apk
 ```
 
 ### 安装到设备
 
 ```bash
 # 复制到设备
-adb install app/build/outputs/apk/debug/app-debug.apk
+adb install app/build/outputs/apk/release/app-release.apk
 
 # 或者直接打开 APK 文件安装
 ```
